@@ -1,0 +1,21 @@
+import random
+
+print("가위바위보 게임 시작!")
+print("0 = 가위, 1 = 바위, 2 = 보")
+
+# 사용자 입력
+user = int(input("당신의 선택은? (0/1/2): "))
+
+# 컴퓨터 선택
+computer = random.randint(0, 2)
+
+choices = ["가위", "바위", "보"]
+print(f"당신: {choices[user]}  vs  컴퓨터: {choices[computer]}")
+
+# 승패 판정
+if user == computer:
+    print("비겼습니다!")
+elif (user == 0 and computer == 2) or (user == 1 and computer == 0) or (user == 2 and computer == 1):
+    print("당신이 이겼습니다! 🎉")
+else:
+    print("컴퓨터가 이겼습니다 😢")
