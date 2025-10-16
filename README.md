@@ -4,7 +4,7 @@
 _opensource_
 ~~opensource~~
 **open__source__**
-<u>opensource</u>
+**open _source_**
 __opensource__
 
 <hr/>
